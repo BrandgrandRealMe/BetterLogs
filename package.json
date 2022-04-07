@@ -2,7 +2,7 @@
   "name": "BetterLogsrootDO_NOT_USE",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "versions/*"
   ],
   "repository": {
     "type": "git",
