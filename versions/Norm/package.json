@@ -20,7 +20,7 @@
         "test": "node tests/basic-test.js && node tests/safe-test.js"
     },
     "engines": {
-        "node": ">=0.1.90"
+        "node": ">=16.6.0"
     },
     "main": "BetterLogs.js",
     "devDependencies": {
