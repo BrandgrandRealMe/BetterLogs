@@ -1,0 +1,26 @@
+{
+    "name": "BetterLogs2Discord",
+    "description": "Have Better Logs sent to discord",
+    "version": "1.0",
+    "author": "BrandgrandReal",
+    "homepage": "https://github.com/BrandgrandRealMe/BetterLogs",
+    "bugs": "https://github.com/BrandgrandRealMe/BetterLogs/issues",
+    "keywords": [
+        "ansi",
+        "terminal",
+        "colors"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BrandgrandRealMe/BetterLogs.git"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=0.1.90"
+    },
+    "main": "lib/BetterLogs2Discord.js",
+    "devDependencies": {
+        "colors/safe": "^1.4.0",
+        "discord-webhook-node": "^1.1.8"
+    }
+}
