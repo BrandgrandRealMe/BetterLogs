@@ -26,7 +26,7 @@ colors.setTheme({
 
 // send Loaded notif
 dlog.success('**BetterLogs**', 'Successfuly Loaded!',`BetterLogs Made By ᛃHʏᴘᴇTᴇᴀᴍᛃ`);
-console.log(colors.info(`BetterLogs | `) + `Successfuly Loaded!`)
+console.log(colors.info(`BL2D | `) + `Successfuly Loaded!`)
 
 
 // Seting the diffrent log types
