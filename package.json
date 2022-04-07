@@ -4,6 +4,17 @@
   "workspaces": [
     "versions/*"
   ],
+  "scripts": {
+    "clean": "rimraf benchmarks/dist \"packages/**/dist\" \"packages/**/node_modules/.cache\"",
+    "docs": "typedoc",
+    "lint": "eslint benchmarks packages scripts tests --ext mjs,ts --fix",
+    "format": "prettier --write \"{benchmarks,packages,scripts,tests}/**/*.{mjs,ts}\"",
+    "build": "yarn workspaces foreach -v --no-private run build",
+    "update": "yarn upgrade-interactive",
+    "publish": "yarn workspaces foreach -v --no-private npm publish",
+    "prepublishOnly": "yarn workspaces foreach -v --no-private run prepublishOnly",
+    "prepare": "husky install"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BrandgrandRealMe/BetterLogs.git"
