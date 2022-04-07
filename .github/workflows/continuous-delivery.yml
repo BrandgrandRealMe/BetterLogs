@@ -1,0 +1,36 @@
+name: Continuous Delivery
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  Publish:
+    name: Publish Next to npm
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Add TypeScript problem matcher
+        run: echo "::add-matcher::.github/problemMatchers/tsc.json"
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+      - name: Install Dependencies
+        run: yarn --immutable
+      - name: Bump Version & Publish
+        run: |
+          echo -e"\n# Resolve the tag for publish."
+          TAG="next"
+          echo -e "\n# Bump the version"
+          yarn workspaces foreach -v --no-private run standard-version --skip.commit --skip.tag --skip.changelog --prerelease "${TAG}.$(git rev-parse --verify --shot HEAD)"
+          echo -e "\n# Publish to NPM"
+          yarn workspaces foreach -v --no-private run release --tag ${TAG}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
