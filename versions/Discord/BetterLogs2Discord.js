@@ -1,6 +1,7 @@
 // Betterlogs Discord Version
 
 
+
 // Load Dependencies
 var colors = require('colors/safe');
 const { Webhook, MessageBuilder } = require('discord-webhook-node');
