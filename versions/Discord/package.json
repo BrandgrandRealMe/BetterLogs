@@ -20,7 +20,7 @@
     },
     "main": "BetterLogs2Discord.js",
     "devDependencies": {
-        "colors/safe": "^1.4.0",
+        "colors": "^1.4.0",
         "discord-webhook-node": "^1.1.8"
     }
 }
