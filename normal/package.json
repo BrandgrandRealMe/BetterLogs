@@ -1,5 +1,5 @@
 {
-    "name": "@BrandgrandRealMe/BetterLogs",
+    "name": "BetterLogs",
     "description": "Have Better Logs",
     "version": "1.0",
     "author": "BrandgrandReal",
@@ -22,7 +22,7 @@
     "engines": {
         "node": ">=0.1.90"
     },
-    "main": "lib/BetterLogs.js",
+    "main": "BetterLogs.js",
     "devDependencies": {
         "colors/safe": "^1.4.0"
     },
