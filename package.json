@@ -1,0 +1,15 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrandgrandRealMe/BetterLogs.git"
+  },
+  "engines": {
+    "node": ">=16.6.0",
+    "npm": ">=7.0.0"
+  },
+}
