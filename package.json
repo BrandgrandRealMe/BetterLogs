@@ -25,5 +25,8 @@
     "main": "lib/BetterLogs.js",
     "devDependencies": {
         "colors/safe": "^1.4.0"
-    }
+    },
+     "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
