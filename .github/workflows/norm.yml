@@ -1,4 +1,4 @@
-name: JSON Continuous Test Integration
+name: norm Continuous Test Integration
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
         if: ${{ !steps.cache-restore.outputs.cache-hit }}
         run: yarn --immutable
       - name: Run Tests
-        run: yarn workspace @joshdb/json run test
+        run: yarn workspace betterlogs run test
       - name: Store Code Coverage Report
         uses: actions/upload-artifact@v2
         with:
