@@ -24,8 +24,11 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Install Dependencies
         run: |
+          yarn set version berry  
+          yarn set version 2.4.2
           yarn install
-          yarn --immutable
+          yarn build
+          yarn test
       - name: Bump Version & Publish
         run: |
           echo -e"\n# Resolve the tag for publish."
