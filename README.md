@@ -1,5 +1,6 @@
 # BetterLogs
-
+ NOT PUBLISHED
+ 
 ![image](https://user-images.githubusercontent.com/47084010/162233247-933af98b-c295-4bdb-b0a1-01e037972856.png)
 
 A node package to give better logs!
