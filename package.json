@@ -1,6 +1,6 @@
 {
   "name": "BetterLogsrootDO_NOT_USE",
-  "private": false,
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
