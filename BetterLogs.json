@@ -23,12 +23,7 @@
         "node": ">=0.1.90"
     },
     "main": "lib/index.js",
-    "files": [
-        "BetterLogs.js",
-        "BetterLogs2Discord.js"
-    ],
     "devDependencies": {
-        "colors/safe": "^1.4.0",
-        "discord-webhook-node": "^1.1.8"
+        "colors/safe": "^1.4.0"
     }
 }
